@@ -6,6 +6,8 @@
   	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
 
+		<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -13,6 +15,13 @@
 
 	</head>
 	<body>
+
+		<!-- The audio-files -->
+		<audio id="audio1" src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" preload="auto"></audio>
+		<audio id="audio2" src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" preload="auto"></audio>
+		<audio id="audio3" src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" preload="auto"></audio>
+		<audio id="audio4" src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" preload="auto"></audio>
+		<!---->
 
     <div class="container">
       <div class="game-row">
@@ -28,6 +37,31 @@
         <div class="game-btn" id="btn4">
         </div>
       </div>
+
+			<div class="game-controls">
+				<div class="center">
+					<h1 id="title">
+						Simon Says
+					</h1>
+					<div class="control-row">
+						<button id="start" class="control-btn">
+							<b>Start/Stop</b>
+						</button>
+						<button id="strict" class="control-btn">
+							<b>Strict</b>
+						</button>
+						<div id="strict-light">
+						</div>
+					</div>
+
+					<div id="level-count">
+						--
+					</div>
+					<div class="label">
+						<b>Level</b>
+					</div>
+				</div>
+			</div>
     </div>
 
   </body>
